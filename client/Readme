@@ -1,0 +1,9 @@
+1. For running api:
+Run docker container: skinet-project-sql-1
+
+\skinet-project>cd api
+\skinet-project\api>dotnet run
+
+2. For running client:
+\skinet-project> cd client
+\skinet-project\client> ng serve
