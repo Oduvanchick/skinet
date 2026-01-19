@@ -13,3 +13,4 @@ C:\D\Udemy\Angular Project\skinet-project\Infrastructure\obj\Debug\net8.0\Infras
 C:\D\Udemy\Angular Project\skinet-project\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
 C:\D\Udemy\Angular Project\skinet-project\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\D\Udemy\Angular Project\skinet-project\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\D\Udemy\Angular Project\skinet-project\Infrastructure\obj\Debug\net8.0\Infrastructure.sourcelink.json

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\D\\Udemy\\Angular Project\\skinet-project\\API\\API.csproj": {}
+    "C:\\D\\Udemy\\Angular Project\\skinet-project\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\D\\Udemy\\Angular Project\\skinet-project\\API\\API.csproj": {
+    "C:\\D\\Udemy\\Angular Project\\skinet-project\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\D\\Udemy\\Angular Project\\skinet-project\\API\\API.csproj",
+        "projectUniqueName": "C:\\D\\Udemy\\Angular Project\\skinet-project\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\D\\Udemy\\Angular Project\\skinet-project\\API\\API.csproj",
+        "projectPath": "C:\\D\\Udemy\\Angular Project\\skinet-project\\api\\API.csproj",
         "packagesPath": "C:\\Users\\Natalia\\.nuget\\packages\\",
-        "outputPath": "C:\\D\\Udemy\\Angular Project\\skinet-project\\API\\obj\\",
+        "outputPath": "C:\\D\\Udemy\\Angular Project\\skinet-project\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Natalia\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -108,6 +113,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -168,6 +178,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {

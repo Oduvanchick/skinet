@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UYY4CLUOeCEdKINo6RreZvONYynZ91hjP5GRvfxGPDKJsIL8/bayBjoSt+34RqR+JhTJ6gTdJW+8EF7zbc81+Q==",
+  "dgSpecHash": "W8fGcOLh3wA=",
   "success": true,
-  "projectFilePath": "C:\\D\\Udemy\\Angular Project\\skinet-project\\API\\API.csproj",
+  "projectFilePath": "C:\\D\\Udemy\\Angular Project\\skinet-project\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Natalia\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\Natalia\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
