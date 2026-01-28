@@ -1,0 +1,55 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Threading.Tasks;
+using Core.Entitites;
+using Core.Interfaces;
+using Infrastructure.Services;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
+
+namespace API.Controllers
+{
+    public class CartController(ICartService cartService) : BaseApiController
+    {
+        [HttpGet]
+        public async Task<ActionResult<ShoppingCart>> GetCartById(string id)
+        {
+            var cart = await cartService.GetCartAsync(id);
+
+            return Ok(cart ?? new ShoppingCart { Id = id });
+        }
+
+        [HttpPost]
+        public async Task<ActionResult<ShoppingCart>> UpdateCart(ShoppingCart cart)
+        {
+            var updatedCart = await cartService.SetCartAsync(cart);
+
+            if (updatedCart == null) return BadRequest("Problem with cart");
+
+            return updatedCart;
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult<ShoppingCart>> DeleteCart(string id)
+        {
+            var result = await cartService.DeleteCartAsync(id);
+
+            if (!result) return BadRequest("Problem with cart");
+
+            return Ok();
+        }
+
+        // public IActionResult Index()
+        // {
+        //     return View();
+        // }
+
+        // [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+        // public IActionResult Error()
+        // {
+        //     return View("Error!");
+        // }
+    }
+}
