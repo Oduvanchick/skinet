@@ -1,0 +1,7 @@
+﻿/Core/obj/Debug/net8.0/Core.csproj.AssemblyReference.cache
+/**/obj/
+.idea/
+/**/bin/
+*.log
+/build/
+.vs/

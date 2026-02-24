@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
-using Core.Entitites;
+using Core.Entities;
 using Core.Interfaces;
 using StackExchange.Redis;
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reflection.Metadata;
 using System.Threading.Tasks;
-using Core.Entitites;
+using Core.Entities;
 using Core.Interfaces;
 
 namespace Infrastructure.Data

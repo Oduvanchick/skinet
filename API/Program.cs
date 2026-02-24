@@ -1,4 +1,5 @@
 using API.Middleware;
+using Core.Entities;
 using Core.Interfaces;
 using Infrastructure.Data;
 using Infrastructure.Services;
@@ -26,6 +27,9 @@ builder.Services.AddSingleton<IConnectionMultiplexer>(config =>
     return ConnectionMultiplexer.Connect(configuration);
 });
 builder.Services.AddSingleton<ICartService, CartService>();
+builder.Services.AddAuthentication();
+builder.Services.AddIdentityApiEndpoints<AppUser>()
+    .AddEntityFrameworkStores<StoreContext>();
 
 var app = builder.Build();
 
@@ -39,11 +43,12 @@ app.UseMiddleware<ExceptionMiddleware>();
 // it is browser security feature that will prevent us from actually loading data into our browser; 
 // for security, prevents malicious websites from making unathorized requests
 // allows the servers to specify which origins
-app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod()
+app.UseCors(x => x.AllowAnyHeader().AllowAnyMethod().AllowCredentials()
     .WithOrigins("http://localhost:4200", "https://localhost:4200")); // where they are allowed
 
 
 app.MapControllers();
+app.MapGroup("api").MapIdentityApi<AppUser>();
 
 try
 {

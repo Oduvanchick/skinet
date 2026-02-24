@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Core.Entitites;
+using Core.Entities;
 using Core.Interfaces;
 using Infrastructure.Services;
 using Microsoft.AspNetCore.Mvc;

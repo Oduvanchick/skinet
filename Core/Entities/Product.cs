@@ -1,6 +1,6 @@
 using System;
 
-namespace Core.Entitites;
+namespace Core.Entities;
 
 public class Product : BaseEntity
 {

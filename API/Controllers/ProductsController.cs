@@ -1,6 +1,6 @@
 using System;
 using API.RequestHelpers;
-using Core.Entitites;
+using Core.Entities;
 using Core.Interfaces;
 using Core.Specifications;
 using Microsoft.AspNetCore.Mvc;

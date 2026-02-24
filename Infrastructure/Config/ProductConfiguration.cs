@@ -1,5 +1,5 @@
 using System;
-using Core.Entitites;
+using Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
