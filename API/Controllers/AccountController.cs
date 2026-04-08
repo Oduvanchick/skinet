@@ -36,23 +36,23 @@ public class AccountController(SignInManager<AppUser> signInManager) : BaseApiCo
 
         return Ok();
     }
-    
+
     [Authorize]
     [HttpPost("logout")]
     public async Task<IActionResult> Logout()
     {
         await signInManager.SignOutAsync();
-        
+
         return NoContent();
     }
-    
+
     [HttpGet("user-info")]
     public async Task<IActionResult> GetUserInfo()
     {
         if (User.Identity?.IsAuthenticated == false) return NoContent();
 
         var user = await signInManager.UserManager.GetUserByEmailWithAddress(User);
-        
+
         return Ok(new
         {
             user.FirstName,
@@ -61,8 +61,8 @@ public class AccountController(SignInManager<AppUser> signInManager) : BaseApiCo
             Address = user.Address?.ToDto()
         });
     }
-    
-    [HttpGet]
+
+    [HttpGet("auth-status")]
     public IActionResult GetAuthState()
     {
         return Ok(new

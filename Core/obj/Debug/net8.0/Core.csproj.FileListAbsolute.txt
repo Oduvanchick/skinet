@@ -10,3 +10,4 @@ C:\D\Udemy\Angular Project\skinet-project\Core\obj\Debug\net8.0\refint\Core.dll
 C:\D\Udemy\Angular Project\skinet-project\Core\obj\Debug\net8.0\Core.pdb
 C:\D\Udemy\Angular Project\skinet-project\Core\obj\Debug\net8.0\ref\Core.dll
 C:\D\Udemy\Angular Project\skinet-project\Core\obj\Debug\net8.0\Core.sourcelink.json
+C:\D\Udemy\Angular Project\skinet-project\Core\obj\Debug\net8.0\Core.csproj.AssemblyReference.cache
